@@ -1,3 +1,5 @@
+//Найти максимальный и минимальный элемент массива за 1 пробег
+
 function findMinAndMaxValue(arr) {
   let min = arr[0];
   let max = min;
