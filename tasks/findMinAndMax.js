@@ -9,10 +9,7 @@ function findMinAndMaxValue(arr) {
     if (max < arr[i]) max = arr[i];
   }
 
-  const result = {};
-
-  result.min = min;
-  result.max = max;
+  const result = { min: min, max: max };
 
   return result;
 }
