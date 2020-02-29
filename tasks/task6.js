@@ -5,9 +5,6 @@ for (let i = 0; i < array.length; i += 1) {
   newArr.push(array[i] * array[i]);
 }
 
-let result = 0;
+let result = newArr.reduce((a, b) => a + b);
 
-for (let i = 0; i < newArr.length; i += 1) {
-  result += newArr[i];
-}
 console.log(result);
