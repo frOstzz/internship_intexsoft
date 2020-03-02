@@ -2,14 +2,12 @@
 // Удалить повторяющиеся элементы
 
 function delRepeatElems(arr) {
-  const reverseArr = arr.reverse();
-
-  for (let i = 0; i < arr.length; i += 1) {
-    if (arr[i] === reverseArr[i]) {
-      arr.splice(arr.indexOf(arr[i]), 1);
-    }
-  }
-  return arr;
+  const data = {};
+  arr.forEach(function(i) {
+    data[i] = true;
+  });
+  const result = Object.keys(data);
+  return result;
 }
 
 console.log(
